@@ -31,12 +31,18 @@ h6 {
    font-size: inherit;
 }
 
+button {
+   cursor: pointer;
+}
+
 body {
    min-width: 320px;
    overflow-x: hidden;
    position: relative;
    color: #fff;
    @extend %ubuntu-light;
+   font-size: 17px;
+   line-height: 26px;
 }
 
 .container {
@@ -53,6 +59,21 @@ body {
    background-size: cover;
    position: relative;
    padding: 74px 0 50px;
+
+   &::before {
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+      opacity: 0.15;
+   }
+
+   &__wrapper {
+      z-index: 1;
+   }
 }
 
 .title {
