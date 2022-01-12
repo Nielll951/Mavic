@@ -295,9 +295,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-left: 25px;
    }
 
-   &__item {}
+   &__item--center {
+      margin-left: -15px;
+      margin-right: -15px;
+   }
 
    &__box {
       width: 280px;
@@ -341,14 +345,16 @@
       background-image: url(../images/pointer-3.svg);
       width: 258px;
       height: 104px;
-      left: 0;
+      left: -299px;
+      top: 16px;
    }
 
    &__box-4::before {
       background-image: url(../images/pointer-4.svg);
       width: 124px;
       height: 89px;
-      left: 0;
+      left: -172px;
+      top: -73px;
    }
 
    &__box-title {
