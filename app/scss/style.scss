@@ -84,6 +84,13 @@
       }
    }
 
+   &__list-phone {
+      display: none;
+   }
+
+   &__btn {
+      display: none;
+   }
 
 }
 
@@ -157,7 +164,7 @@
 
    &__slider-box {
       position: relative;
-      padding-top: 110px;
+      padding-top: 80px;
    }
 
    &__slider-text {
@@ -236,6 +243,7 @@
 
       &:nth-child(4) {
          margin-left: 60px;
+         margin-bottom: 80px;
       }
 
       &:first-child,
@@ -595,3 +603,5 @@
       color: rgba(#fff, .64);
    }
 }
+
+@import "media";
