@@ -271,7 +271,29 @@
    .products__slider {
       margin-left: auto;
    }
+}
 
+@media (max-width: 787px) {
+
+   .benefits__items {
+      padding-left: 0;
+   }
+
+   .benefits__item:nth-child(even) {
+      margin-left: 0;
+   }
+
+   .benefits__item:nth-child(3) {
+      margin-left: 0;
+   }
+
+   .benefits__item:nth-child(4) {
+      margin-bottom: 50px;
+   }
+
+   .benefits__info {
+      width: 100%;
+   }
 }
 
 @media (max-width: 680px) {
@@ -325,6 +347,26 @@
 
    .scroll__btn {
       padding: 13px 0;
+   }
+
+   .benefits__item {
+      display: block;
+   }
+
+   .benefits__num {
+      display: none;
+   }
+
+   .benefits__img {
+      img {
+         display: block;
+         margin-left: auto;
+         padding: 20px 0;
+      }
+   }
+
+   .benefits__img::before {
+      top: 8px;
    }
 }
 
